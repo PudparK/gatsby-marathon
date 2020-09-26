@@ -1,0 +1,58 @@
+@import "../../assets/scss/main.scss";
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0 40px 0 #808080;
+  @include large-devices {
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .Navigation {
+    display: none;
+  }
+  .active {
+    color: #27a9e0;
+  }
+}
+
+.headerSpace {
+  height: 76px;
+  width: 100%;
+  // margin-bottom: 15px;
+}
+
+@include min-width(1024px) {
+  .NavContainer {
+    width: 100%;
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 120px auto 120px;
+    .Logo {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .Navigation {
+      width: 100%;
+      display: flex;
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

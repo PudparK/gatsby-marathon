@@ -1,0 +1,27 @@
+@import "../../assets/scss/main.scss";
+.footer {
+  background-color: #e1f4fd;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .flex {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    div {
+      margin: 0 auto 0.75rem auto;
+    }
+    p {
+      text-align: center;
+      color: var(--lightblue);
+      font-size: 1rem;
+      padding: 0 2rem;
+      @include medium-devices {
+        padding: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.sidebar {
+  background: #ffffff;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+  max-height: 100vh; //TODO Change to below the Header bar.
+  max-width: 35rem;
+  min-width: 25rem;
+  min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  padding-top: 152px;
+  position: fixed;
+  right: -100%;
+  top: 0;
+  transition: 300ms right;
+  width: 100%;
+  z-index: 100;
+  a {
+    // TODO Active link
+    display: block;
+    position: relative;
+    text-decoration: none;
+  }
+}
+
+.active {
+  &:after {
+    border-left: #27a9e0 solid 4px;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+  }
+}
+
+.sidebar.slideIn {
+  right: 0;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+}

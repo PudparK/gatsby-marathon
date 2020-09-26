@@ -1,0 +1,40 @@
+@import "../../assets/scss/main.scss";
+.heroWrapper {
+  background: url("assets/img/hero-bg.jpg") 80% center no-repeat;
+  background-size: cover;
+  .hero {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: calc(80vh - 76px);
+    justify-content: center;
+    padding: 0 2rem;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: left;
+    @include medium-devices {
+      max-width: 860px;
+    }
+    @include large-devices {
+      max-width: 1024px;
+      height: calc(90vh - 76px);
+    }
+  }
+  p {
+    color: var(--lightgray);
+    font-size: inherit;
+    width: 100%;
+    max-width: 512px;
+    @include medium-devices {
+      font-size: 2.3rem;
+      line-height: 2.6rem;
+    }
+  }
+  button {
+    font-size: inherit;
+    @include medium-devices {
+      font-size: 2.3rem;
+    }
+  }
+}

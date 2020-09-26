@@ -1,0 +1,337 @@
+@import "../assets/scss/main.scss";
+:root {
+  --lightblue: #27a9e0;
+  --lighterblue: #e1f4fd;
+  --lightgray: #808080;
+  --primary: #ef253d;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  outline: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: montserrat, sans-serif;
+  font-size: 1.6rem;
+}
+
+// Global font sizes
+html {
+  scroll-behavior: smooth;
+}
+// font-sizes
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.6rem;
+}
+h3 {
+  font-size: inherit;
+  @include medium-devices {
+    font-size: 2.2rem;
+  }
+}
+p {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+@include medium-devices {
+  h1 {
+    font-size: 4rem;
+    line-height: 4.6rem;
+  }
+  h2 {
+    font-size: 3.6rem;
+  }
+  p {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+@include large-devices {
+  h1 {
+    font-size: 6rem;
+    line-height: 6.6rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  p {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+}
+
+a {
+  color: var(--lightgray);
+}
+
+.active {
+  color: #27a9e0;
+}
+.noShow {
+  display: none;
+}
+
+//Non classnames styles
+.logo {
+  min-width: 36px;
+}
+
+.full-link,
+.thumb,
+.fullimage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100% !important;
+  z-index: 1;
+}
+
+.cover {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+.flipped {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.four-o-four {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  text-align: center;
+  p {
+    margin-top: 2.5rem;
+    text-transform: capitalize;
+  }
+  button {
+    margin-top: 2.5rem;
+  }
+}
+
+.leaflet-control-attribution,
+.leaflet-control {
+  display: none;
+}
+
+.home-header {
+  margin-bottom: 1rem;
+}
+
+/**
+* ----------------------------------------------
+* Demo styles
+* ----------------------------------------------
+**/
+.accordion {
+  border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button {
+  background-color: #f4f4f4;
+  color: var(--lightgray);
+  cursor: pointer;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  border: none;
+}
+
+.accordion__button:hover {
+  background-color: #ddd;
+}
+
+.accordion__button:before {
+  display: inline-block;
+  content: "";
+  height: 10px;
+  width: 10px;
+
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  position: absolute;
+  right: 2.2rem;
+  transform: rotate(-45deg);
+  transition: transform 0.25s;
+}
+
+.accordion__button[aria-expanded="true"]::before,
+.accordion__button[aria-selected="true"]::before {
+  transform: rotate(45deg);
+  transition: transform 0.25s;
+}
+
+[hidden] {
+  display: none;
+}
+
+.accordion__panel {
+  padding: 2rem;
+  // animation: fadein 0.35s ease-in;
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../assets/scss/main.scss";
+.blurb {
+  width: 100%;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  p {
+    max-width: 680px;
+    width: 100%;
+  }
+}
+@include medium-devices {
+  .blurb {
+    margin: 1.4em auto;
+  }
+}

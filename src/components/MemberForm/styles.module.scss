@@ -1,0 +1,32 @@
+@import "../../assets/scss/main.scss";
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  form {
+    width: 60rem;
+    padding: 2.5rem;
+    border: 0.25rem solid rgba(0, 0, 0, 0.04);
+
+    border-radius: 1rem;
+    div {
+      height: 100px;
+      color: var(--lightblue);
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+      label {
+        display: block;
+        margin-bottom: 2.5rem;
+      }
+      input {
+        display: block;
+        padding: 1rem;
+        width: 100%;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

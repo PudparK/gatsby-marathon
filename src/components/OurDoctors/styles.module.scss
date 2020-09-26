@@ -1,0 +1,108 @@
+@import "../../assets/scss/main.scss";
+.memberWrapper {
+  width: 100%;
+  @include small-devices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.5rem;
+  }
+  @include medium-devices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    margin: 4rem auto 15rem auto;
+  }
+  @include large-devices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.5fr;
+  }
+}
+.member {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  margin-bottom: 8rem;
+  margin-top: 5rem;
+  position: relative;
+  @include small-devices {
+    border: 0.25rem solid rgba(0, 0, 0, 0.04);
+    padding: 2rem;
+  }
+  &::after {
+    content: "";
+    background-color: var(--lightgray);
+    opacity: 0.3;
+    height: 0.1rem;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    margin-bottom: -2.5rem;
+    @include small-devices {
+      margin-bottom: 2.5rem;
+    }
+    @include medium-devices {
+      margin-bottom: 5rem;
+    }
+  }
+  .memberPhoto {
+    background-position: center center;
+    background-size: Contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-bottom: 1.2rem;
+    padding: 8rem;
+  }
+}
+.memberText {
+  width: 100%;
+  min-width: 58%;
+  padding-left: 1rem;
+  text-align: center;
+  margin: 1rem auto;
+  h2 {
+    font-size: inherit;
+    @include medium-devices {
+      font-size: 2rem;
+    }
+    margin-bottom: 0.75rem;
+  }
+  @include medium-devices {
+    margin: 2em 1.5rem;
+    justify-self: flex-start;
+  }
+  .memberUl {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-top: 0.3rem;
+    li {
+      margin-top: 0.5rem;
+      @include medium-devices {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+.iconBar {
+  margin: 2rem auto;
+  li {
+    font-size: 2.25rem;
+  }
+}
+.profileButton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  button {
+    min-width: 16rem;
+    padding: 0.5rem 0;
+    @include medium-devices {
+      font-size: 1.7rem;
+      padding: 0.75rem 0;
+      margin-top: 2rem;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../assets/scss/main.scss";
+.containerWrapper {
+  margin: 0 auto;
+  .container {
+    padding: 0 20px;
+
+    @include medium-devices {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1024px;
+    }
+  }
+}
+.lightBlue {
+  background-color: #e1f4fd;
+}

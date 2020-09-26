@@ -1,0 +1,12 @@
+@import "../../assets/scss/main.scss";
+.faqsWrapper {
+  margin: 6rem auto 8.5rem auto;
+  position: relative;
+  width: 100%;
+  h2 {
+    margin-bottom: 0.5em;
+  }
+  @include medium-devices {
+    margin: 15rem auto 15rem auto;
+  }
+}
