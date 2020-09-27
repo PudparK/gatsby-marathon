@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 
 // Components
 import Header from "components/Header"
-import Footer from "components/footer"
+import Footer from "components/Footer"
 
 function Layout({ children }) {
   console.log(Header)

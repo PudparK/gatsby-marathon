@@ -5,7 +5,7 @@ import logoSrc from "assets/logo.svg"
 import Container from "components/Container"
 import IconBar from "components/IconBar"
 import Logo from "components/Logo"
-import SectionDivider from "components/sectiondivider/"
+import SectionDivider from "components/SectionDivider/"
 
 function Footer() {
   return (
