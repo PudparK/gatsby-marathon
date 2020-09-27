@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import { useEffect, useRef } from "react"
 import classNames from "classnames"
 import styles from "./styles.module.scss"

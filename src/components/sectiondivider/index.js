@@ -1,14 +1,6 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import styles from "./styles.module.scss"
 
 export default props => {
-  return (
-    <div
-      sx={{
-        bg: "secondary",
-      }}
-      className={styles[props.type]}
-    ></div>
-  )
+  return <div className={styles[props.type]}></div>
 }

@@ -2,7 +2,7 @@ const path = require("path")
 
 module.exports = {
   siteMetadata: {
-    title: `Direct Care Physicians of Greater Houston`,
+    title: `Marathon Staffing`,
     description: `Doctors of Direct Care Physicians offer a variety of cost effect services.`,
     //TO DO need to add description
     author: `132 Design`,
@@ -23,23 +23,6 @@ module.exports = {
       resolve: `gatsby-plugin-root-import`,
       options: {
         root: path.join(__dirname, "src"),
-      },
-    },
-    {
-      resolve: `gatsby-source-wordpress-experimental`,
-      options: {
-        url: `https://ghdpc.132graphics.com/graphql`,
-        schema: {
-          timeout: 100000,
-        },
-      },
-    },
-    {
-      resolve: `gatsby-source-graphql`,
-      options: {
-        typeName: `WPGraphQL`,
-        fieldName: `wpcontent`,
-        url: `https://ghdpc.132graphics.com/graphql`,
       },
     },
   ],

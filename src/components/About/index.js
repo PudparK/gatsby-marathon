@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
+import React from "react"
 import styles from "./styles.module.scss"
 import aboutBg from "../../assets/img/about-us.jpg"
 

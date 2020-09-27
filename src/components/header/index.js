@@ -44,7 +44,7 @@ export default function Header({ className }) {
             </Link>
           </div>
           <div className={styles.Navigation}>
-            <MenuLinks activeClass={styles.active} />
+            <MenuLinks />
           </div>
           <div></div>
         </div>
@@ -59,14 +59,7 @@ export default function Header({ className }) {
           setToggle={() => {
             toggleFunc(false)
           }}
-          content={
-            <MenuLinks
-              activeClass={styles.active}
-              onClose={() => {
-                setToggle(false)
-              }}
-            />
-          }
+          content={<MenuLinks />}
         />
       </div>
       <div className={styles.headerSpace}></div>

@@ -1,5 +1,3 @@
-/** @jsx jsx */
-import { jsx } from "theme-ui"
 import React from "react"
 import styles from "./styles.module.scss"
 import logoSrc from "assets/logo.svg"

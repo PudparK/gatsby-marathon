@@ -2,10 +2,11 @@ import React from "react"
 import { Helmet } from "react-helmet"
 
 // Components
-import Header from "components/header"
+import Header from "components/Header"
 import Footer from "components/footer"
 
 function Layout({ children }) {
+  console.log(Header)
   return (
     <>
       <Helmet>
