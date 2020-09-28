@@ -15,7 +15,7 @@
 }
 
 .hamburgerButton span {
-  background: #404041;
+  background: var(--primary);
   height: 4px;
   left: 0;
   position: absolute;
@@ -25,7 +25,7 @@
 .hamburgerButton span:first-child {
   display: block;
   position: absolute;
-  top: 5px;
+  top: 0.3rem;
 }
 
 .hamburgerButton span:nth-child(2) {

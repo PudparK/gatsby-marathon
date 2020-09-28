@@ -128,6 +128,7 @@ const Home = () => {
               <a href="tel:+8327677054">
                 <strong>(832)767-7054</strong>
               </a>
+              .
             </p>
             <p>
               For more information about Coronavirus, please visit{" "}

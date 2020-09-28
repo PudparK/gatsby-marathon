@@ -1,9 +1,9 @@
 @import "../../assets/scss/main.scss";
 .Button {
-  border-radius: 0.4rem;
+  border-radius: 2.5rem;
   border: none;
   padding: 0.25rem 0.75rem;
   @include medium-devices {
-    padding: 0.75rem 1.6rem;
+    padding: 0.75rem 2rem;
   }
 }
