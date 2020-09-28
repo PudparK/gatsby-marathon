@@ -13,6 +13,10 @@
     z-index: -1;
     background: url("assets/img/bg-texture.jpg") left center no-repeat;
     background-size: 50%;
+    @include medium-devices {
+      background-size: 60rem;
+      left: 74%;
+    }
   }
   &::after {
     content: "";
@@ -25,6 +29,9 @@
     transform: rotate(180deg);
     background: url("assets/img/bg-texture.jpg") right center no-repeat;
     background-size: 50%;
+    @include medium-devices {
+      background-size: 60rem;
+    }
   }
   .content {
     @include medium-devices {

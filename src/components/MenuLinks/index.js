@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import styles from "./styles.module.scss"
 
 const MenuLinks = () => {
   const links = [
@@ -14,7 +15,7 @@ const MenuLinks = () => {
     },
     {
       label: `SERVICES`,
-      uri: `/careers`,
+      uri: `/services`,
     },
     {
       label: `CONTACT`,
@@ -26,14 +27,18 @@ const MenuLinks = () => {
     },
   ]
   return (
-    <ul>
+    <ul className={styles.menuLinks}>
       {links.map((link, i) => {
         return (
           <li key={i}>
             {link.anchor ? (
-              <AnchorLink to={link.uri}>{link.label}</AnchorLink>
+              <AnchorLink to={link.uri} activeClassName={styles.active}>
+                {link.label}
+              </AnchorLink>
             ) : (
-              <Link to={link.uri}>{link.label}</Link>
+              <Link to={link.uri} activeClassName={styles.active}>
+                {link.label}
+              </Link>
             )}
           </li>
         )
