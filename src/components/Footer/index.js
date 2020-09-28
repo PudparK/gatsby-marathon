@@ -1,33 +1,36 @@
 import React from "react"
 import styles from "./styles.module.scss"
-import logoSrc from "assets/logo.svg"
+import logoSrc from "assets/img/logo.png"
 
-import Container from "components/Container"
 import IconBar from "components/IconBar"
 import Logo from "components/Logo"
-import SectionDivider from "components/SectionDivider/"
 
 function Footer() {
   return (
     <React.Fragment>
-      <SectionDivider type="thickBar"></SectionDivider>
-      <footer sx={{ background: "lighterBlue" }} className={styles.footer}>
-        <Container>
-          <div className={styles.flex}>
-            <div>
-              <Logo imageSrc={logoSrc} size={"100px"} />
-            </div>
-            <div>
-              <IconBar styleClass="borders" />
-            </div>
-            <div>
-              <p sx={{ color: "primary" }}>
-                Copyright © 2020 Direct Care Physicians of Greater Houston - All
-                Rights Reserved.
-              </p>
-            </div>
+      <footer className={styles.footer}>
+        <div className={styles.flex}>
+          <div>
+            <Logo imageSrc={logoSrc} />
           </div>
-        </Container>
+          <div className={styles.address}>
+            <p>
+              711 W. BAY AREA BLVD. STE. 675
+              <br />
+              WEBSTER, TX 77598
+            </p>
+          </div>
+          <div>
+            <IconBar styleClass="borders" />
+          </div>
+          <div className={styles.small}>
+            <p>
+              Copyright © 2018 247 Workforce Personnel, LLC
+              <br />
+              All Rights Reserved.
+            </p>
+          </div>
+        </div>
       </footer>
     </React.Fragment>
   )

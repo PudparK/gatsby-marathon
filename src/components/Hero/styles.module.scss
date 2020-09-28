@@ -1,6 +1,6 @@
 @import "../../assets/scss/main.scss";
 .heroWrapper {
-  background: url("assets/img/hero-bg.jpg") 80% center no-repeat;
+  background: url("assets/img/hero-bg.jpg") center center no-repeat;
   background-size: cover;
   .hero {
     align-items: flex-start;
@@ -21,6 +21,12 @@
       height: calc(90vh - 76px);
     }
   }
+  h1 {
+    color: #000000;
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 9rem;
+  }
   p {
     color: var(--lightgray);
     font-size: inherit;
@@ -32,7 +38,10 @@
     }
   }
   button {
+    background-color: var(--primary);
+    color: #ffffff;
     font-size: inherit;
+    padding: 1rem;
     @include medium-devices {
       font-size: 2.3rem;
     }

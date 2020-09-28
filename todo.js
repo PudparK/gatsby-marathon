@@ -32,28 +32,4 @@
 // https://www.vidafamilydpc.com/post/what-is-a-vida-family-medicine-direct-primary-care-membership
 
 // Information on membership form
-
-// TODO - Resources
-// Drop menu
-// Blog template
-// Blog excerpts page
-// Query all the pages excerpts
-// Css Events
-// Video Component -- later
-
-// TODO - Our doctors
-// Our Doctors like Garages
-// Vendors they use
-
-// TODO Landing Page
-// Leadlet map Z-Index.
-
-// TODO Bio under the doctors.
-// Link to their clinic button.
-// Clinic and clinic profile.
-// People looking for individual doctors.
-// Photography
-
-// Meeting Notes
-// TODO List of different specialties. Need a map key.
-// TODO Fix blog images.
+// TODO events page.
