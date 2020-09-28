@@ -6,7 +6,7 @@ import styles from "./styles.module.scss"
 import classNames from "classnames"
 import PropTypes from "prop-types"
 import Logo from "components/Logo"
-import logoSrc from "assets/logo.svg"
+import logoSrc from "assets/img/logo.png"
 import { Link } from "gatsby"
 
 //Components
@@ -46,7 +46,6 @@ export default function Header({ className }) {
           <div className={styles.Navigation}>
             <MenuLinks />
           </div>
-          <div></div>
         </div>
         <HamburgerButton
           toggle={toggle}

@@ -1,20 +1,15 @@
 import React from "react"
-import classNames from "classnames"
 import PropTypes from "prop-types"
-import styles from "./styles.module.css"
 
 const Logo = ({ className, imageSrc, size, mb, ...otherProps }) => {
   return (
-    <div
-      {...otherProps}
-      className={classNames(className, styles.logo)}
+    <img
+      src={imageSrc}
+      alt="Marathon Logo"
       style={{
-        backgroundImage: `url(${imageSrc})`,
-        height: size,
-        width: size,
-        marginBottom: mb,
+        width: "20rem",
       }}
-    ></div>
+    />
   )
 }
 

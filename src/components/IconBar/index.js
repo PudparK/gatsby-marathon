@@ -3,8 +3,8 @@ import styles from "./styles.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faFacebook,
+  faTwitter,
   faInstagram,
-  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 
 export default ({ size, links }) => {
@@ -17,13 +17,13 @@ export default ({ size, links }) => {
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com">
-            <FontAwesomeIcon icon={faInstagram} />
+          <a href="https://www.twitter.com">
+            <FontAwesomeIcon icon={faTwitter} />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com">
-            <FontAwesomeIcon icon={faLinkedin} />
+          <a href="https://www.instagram.com">
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
         </li>
       </ul>

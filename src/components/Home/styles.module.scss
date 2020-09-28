@@ -1,0 +1,45 @@
+@import "../../assets/scss/main.scss";
+
+.contentWrapper {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    bottom: -10%;
+    left: 10%;
+    z-index: -1;
+    background: url("assets/img/bg-texture.jpg") left center no-repeat;
+    background-size: 50%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -16%;
+    left: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+    background: url("assets/img/bg-texture.jpg") right center no-repeat;
+    background-size: 50%;
+  }
+  .content {
+    @include medium-devices {
+      margin: 0 auto;
+    }
+  }
+}
+
+.contentBoxesWrapper {
+  width: 100%;
+  max-width: 102.4rem;
+  margin: 0 auto 5rem auto;
+  @include medium-devices {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(32.8rem, 1fr));
+    grid-column-gap: 2rem;
+  }
+}

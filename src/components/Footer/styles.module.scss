@@ -1,6 +1,6 @@
 @import "../../assets/scss/main.scss";
 .footer {
-  background-color: #e1f4fd;
+  background-color: var(--darkgray);
   height: 30rem;
   display: flex;
   flex-direction: column;
@@ -11,16 +11,23 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    div {
-      margin: 0 auto 0.75rem auto;
+    .address {
+      p {
+        color: "#000000";
+        font-size: "1.6rem";
+        text-align: center;
+        font-weight: bold;
+      }
     }
-    p {
-      text-align: center;
-      color: var(--lightblue);
-      font-size: 1rem;
-      padding: 0 2rem;
-      @include medium-devices {
-        padding: 0;
+    .small {
+      p {
+        text-align: center;
+        font-size: 1rem;
+        color: #000000;
+        line-height: 1.5rem;
+        @include medium-devices {
+          padding: 0;
+        }
       }
     }
   }
