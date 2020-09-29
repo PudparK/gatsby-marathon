@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import propTypes from "prop-types"
 import styles from "./styles.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -24,9 +23,9 @@ const ContentBox = ({ content }) => {
         {content.content}
         {content.buttonText ? (
           <div className={styles.boxButton}>
-            <Link to="#">
+            <a href="https://tfs.avionte.com/247-wfp" rel="noopener noreferrer">
               <Button text={content.buttonText} />
-            </Link>
+            </a>
           </div>
         ) : null}
       </div>

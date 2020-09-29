@@ -34,7 +34,7 @@ const MenuLinks = () => {
     if (link.external) {
       return (
         <li key={i}>
-          <a href={link.uri} target="_blank" rel="noreferrer">
+          <a href={link.uri} target="_blank" rel="noopener noreferrer">
             {link.label} <FontAwesomeIcon icon={faExternalLinkAlt} size="xl" />
           </a>
         </li>
