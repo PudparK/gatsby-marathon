@@ -25,5 +25,12 @@ module.exports = {
         root: path.join(__dirname, "src"),
       },
     },
+    {
+      resolve: "gatsby-remark-external-links",
+      options: {
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+    },
   ],
 }

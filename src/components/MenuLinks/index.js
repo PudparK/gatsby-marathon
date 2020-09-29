@@ -23,28 +23,37 @@ const MenuLinks = () => {
     },
     {
       label: `CAREERS`,
-      uri: `/careers`,
+      uri: `https://tfs.avionte.com/247-wfp`,
+      external: true,
     },
   ]
-  return (
-    <ul className={styles.menuLinks}>
-      {links.map((link, i) => {
-        return (
-          <li key={i}>
-            {link.anchor ? (
-              <AnchorLink to={link.uri} activeClassName={styles.active}>
-                {link.label}
-              </AnchorLink>
-            ) : (
-              <Link to={link.uri} activeClassName={styles.active}>
-                {link.label}
-              </Link>
-            )}
-          </li>
-        )
-      })}
-    </ul>
-  )
+
+  const getLinkTypes = (link, i) => {
+    if (link.external) {
+      return (
+        <li key={i}>
+          <a href={link.uri} target="_blank" rel="noreferrer">
+            {link.label}
+          </a>
+        </li>
+      )
+    }
+    return (
+      <li key={i}>
+        {link.anchor ? (
+          <AnchorLink to={link.uri} activeClassName={styles.active}>
+            {link.label}
+          </AnchorLink>
+        ) : (
+          <Link to={link.uri} activeClassName={styles.active}>
+            {link.label}
+          </Link>
+        )}
+      </li>
+    )
+  }
+
+  return <ul className={styles.menuLinks}>{links.map(getLinkTypes)}</ul>
 }
 
 export default MenuLinks

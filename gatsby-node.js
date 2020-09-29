@@ -1,6 +1,4 @@
 const path = require(`path`)
-const nodeFactory = require("./nodeFactory")
-
 require("dotenv").config()
 
 // const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY
