@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import styles from "./styles.module.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 
 const MenuLinks = () => {
   const links = [
@@ -33,7 +35,7 @@ const MenuLinks = () => {
       return (
         <li key={i}>
           <a href={link.uri} target="_blank" rel="noreferrer">
-            {link.label}
+            {link.label} <FontAwesomeIcon icon={faExternalLinkAlt} size="xl" />
           </a>
         </li>
       )
