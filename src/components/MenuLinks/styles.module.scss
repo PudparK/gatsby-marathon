@@ -2,6 +2,9 @@
   li {
     a {
       color: #000000;
+      & + svg {
+        color: var(--lightgray);
+      }
     }
   }
   .active {
