@@ -1,5 +1,7 @@
 import React from "react"
 
+import EmployeeResources from "components/EmployeeResources"
+
 export default () => {
-  return <h1>Test</h1>
+  return <EmployeeResources />
 }

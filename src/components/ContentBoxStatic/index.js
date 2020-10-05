@@ -1,8 +1,6 @@
 import React from "react"
 import propTypes from "prop-types"
 import styles from "./styles.module.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons"
 
 //Components
 import Button from "components/Button"
@@ -10,14 +8,11 @@ import Button from "components/Button"
 const ContentBox = ({ content }) => {
   return (
     <div className={styles.contentBox}>
-      <div
+      <img
         className={styles.bgImage}
-        style={{
-          backgroundImage: "url(" + content.imgSrc + ")",
-          backgroundPosition: "center center",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
+        src={content.imgSrc}
+        alt="Marathon Personnel News"
+      />
       <div className={styles.box}>
         {content.content}
         {content.buttonText ? (
@@ -29,10 +24,7 @@ const ContentBox = ({ content }) => {
         ) : null}
       </div>
       <div className={styles.heading}>
-        <h2>
-          {content.heading}{" "}
-          <FontAwesomeIcon icon={faArrowCircleDown} size="sm" />
-        </h2>
+        <h2>{content.heading}</h2>
       </div>
     </div>
   )
@@ -42,3 +34,5 @@ ContentBox.propTypes = {
   content: propTypes.object,
 }
 export default ContentBox
+
+// TODO h2 not sitting at the bottom.

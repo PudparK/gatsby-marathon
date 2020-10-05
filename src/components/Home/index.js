@@ -8,6 +8,9 @@ import ContentBox from "components/ContentBox"
 import Blurb from "components/Blurb"
 import Hero from "components/Hero"
 
+//Assets
+const bg = require(`../../assets/img/hero-bg.jpg`)
+
 const content = {
   hero: { headerText: `RUN WITH US.`, buttonText: `APPLY NOW` },
   blurb: {
@@ -108,13 +111,12 @@ const content = {
 const Home = () => {
   return (
     <React.Fragment>
-      <Hero content={content.hero} />
+      <Hero content={content.hero} bgSrc={bg} />
       <div className={styles.contentWrapper}>
         <div className={styles.content}>
           <Blurb content={content.welcomeBlurb} />
           <div className={styles.contentBoxesWrapper}>
             {content.contentBoxes.map((box, i) => {
-              console.log("box:", box)
               return <ContentBox content={box} key={i} />
             })}
           </div>

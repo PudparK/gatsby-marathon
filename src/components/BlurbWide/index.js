@@ -4,7 +4,6 @@ import classNames from "classnames"
 import PropTypes from "prop-types"
 
 const Blurb = ({ content, darkGray, children }) => {
-  console.log("darkGray:", darkGray)
   return (
     <div
       className={classNames(styles.blurbWrapper, {

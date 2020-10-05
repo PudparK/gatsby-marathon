@@ -36,11 +36,7 @@ const MenuLinks = () => {
         <li key={i}>
           <a href={link.uri} target="_blank" rel="noopener noreferrer">
             {link.label}{" "}
-            <FontAwesomeIcon
-              icon={faExternalLinkAlt}
-              size="xl"
-              color="var(--darkgray)"
-            />
+            <FontAwesomeIcon icon={faExternalLinkAlt} color="var(--darkgray)" />
           </a>
         </li>
       )

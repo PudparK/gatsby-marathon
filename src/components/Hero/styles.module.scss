@@ -1,6 +1,7 @@
 @import "../../assets/scss/main.scss";
 .heroWrapper {
-  background: url("assets/img/hero-bg.jpg") center center no-repeat;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
   .hero {
     align-items: flex-start;

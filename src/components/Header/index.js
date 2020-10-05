@@ -19,7 +19,6 @@ export default function Header({ className }) {
   const [isToggable, setToggable] = useState(true)
 
   const toggleFunc = nextState => {
-    console.log(nextState)
     if (isToggable) {
       setToggable(false)
       setTimeout(() => {

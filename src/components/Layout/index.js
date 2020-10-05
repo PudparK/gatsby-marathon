@@ -6,7 +6,6 @@ import Header from "components/Header"
 import Footer from "components/Footer"
 
 function Layout({ children }) {
-  console.log(Header)
   return (
     <>
       <Helmet>
