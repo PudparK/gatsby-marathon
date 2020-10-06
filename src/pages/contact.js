@@ -1,5 +1,8 @@
 import React from "react"
 
+//Components
+import Contact from "components/Contact"
+
 export default () => {
-  return <h1>Test</h1>
+  return <Contact />
 }

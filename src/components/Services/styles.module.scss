@@ -3,6 +3,7 @@
 .contentWrapper {
   position: relative;
   overflow: hidden;
+  min-height: 80vh;
   &::before {
     content: "";
     position: absolute;
@@ -56,7 +57,7 @@
   }
 }
 
-.servicesContent {
+.contactContent {
   display: grid;
   grid-template-columns: auto;
   @include medium-devices {
@@ -69,8 +70,8 @@
       margin-bottom: 0;
     }
   }
-  .servicesListWrapper {
-    .servicesList {
+  .contactListWrapper {
+    .contactList {
       background-color: #ffffff;
       border-bottom: 0.5rem solid var(--primary);
       padding: 2rem;
@@ -80,7 +81,7 @@
         font-weight: 600;
         margin-bottom: 1rem;
       }
-      .servicesListUl {
+      .contactListUl {
         li {
           margin-bottom: 1rem;
         }

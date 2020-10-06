@@ -3,6 +3,7 @@ import styles from "./styles.module.scss"
 
 //Components
 import Blurb from "components/Blurb"
+import ContentBoxStatic from "components/ContentBoxStatic"
 import Hero from "components/Hero"
 
 //Assets
@@ -74,7 +75,53 @@ const EmployeeResources = () => {
       <div className={styles.contentWrapper}>
         <div className={styles.content}>
           <Blurb content={content.servicesBlurb}>
-            <React.Fragment></React.Fragment>
+            <React.Fragment>
+              <div className={styles.servicesContent}>
+                <div className={styles.pText}>
+                  <p>
+                    The answer is simple, to maximize your RESOURCES! Marathon
+                    Personnel has over 50 years of combined experience. We stay
+                    on top of recruiting trends to maximize your return on
+                    investment.
+                  </p>
+                  <p>
+                    Marathon Personnel knows that finding the right candidate is
+                    essential for production and service needs. We thoroughly
+                    evaluate each potential candidate to affirm proficiency and
+                    reliability so that they can rhythmically mesh into your
+                    companies’ work culture, which in turn reduces your
+                    administrative work.
+                  </p>
+                  <p>
+                    Our hiring programs are highly customizable. We offer
+                    different types of drug testing and background screening to
+                    best fit your employment practices. Marathon Personnel
+                    handles account management, unemployment claims, worker’s
+                    compensation claims, and payroll.
+                  </p>
+                  <p>Leaving YOU with more time and resources!</p>
+                </div>
+                <div className={styles.servicesListWrapper}>
+                  <div className={styles.servicesList}>
+                    <h3>Services</h3>
+                    <ul className={styles.servicesListUl}>
+                      <li>• Background Screening</li>
+                      <li>• Drug Testing</li>
+                      <li>• Worker's Comp Insurance</li>
+                      <li>• Weekly Payroll Services</li>
+                      <li>• Skilled-based Assessments</li>
+                      <li>• Safety Orientation</li>
+                      <li>• Human Resource Function</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.contentBoxesWrapper}>
+                {content.contentBoxesStaticContent.map((contentBox, i) => {
+                  return <ContentBoxStatic content={contentBox} key={i} />
+                })}
+              </div>
+            </React.Fragment>
           </Blurb>
           <Blurb
             content={content.eventsBlurb}

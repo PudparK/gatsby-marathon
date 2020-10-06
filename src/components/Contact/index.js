@@ -3,123 +3,59 @@ import styles from "./styles.module.scss"
 
 //Components
 import Blurb from "components/Blurb"
-import ContentBoxStatic from "components/ContentBoxStatic"
-import Hero from "components/Hero"
-
-//Assets
-const bg = require(`../../assets/img/about-us.jpg`)
 
 const content = {
   hero: { headerText: `RUN WITH US.`, buttonText: `APPLY NOW` },
-  servicesBlurb: {
-    headerText: `SERVICES`,
+  contactBlurb: {
+    headerText: `Contact`,
   },
   eventsBlurb: {
     headerText: `EVENTS`,
     pText: `With the increasing number of confirmed Coronavirus (COVID-19) cases, we are choosing to put our candidates and staff first by closing our doors temporarily. No walk-ins will be accepted until further notice, to help slow the spread of the virus.`,
     darkGray: true,
   },
-  contentBoxesStaticContent: [
-    {
-      heading: `BILLING`,
-      imgSrc: require(`assets/img/billing-sheet-icon.svg`),
-      content: (
-        <React.Fragment>
-          <p>
-            247WFP offers flexible payment plans and we offer pre-paid services
-            at a reduced price. Our different level mark-ups encompass the level
-            of services needed.
-          </p>
-        </React.Fragment>
-      ),
-    },
-    {
-      heading: `HR/PAYROLL FUNCTIONS`,
-      imgSrc: require(`assets/img/paycheck-stub-icon.svg`),
-      content: (
-        <React.Fragment>
-          <ul className={styles.servicesListUl}>
-            <li>• Recruitment</li>
-            <li>• Hiring</li>
-            <li>• Compensation</li>
-            <li>• Legal Compliance</li>
-            <li>• Discipline</li>
-            <li>• Employee Terminations</li>
-            <li>• Benefits</li>
-          </ul>
-        </React.Fragment>
-      ),
-    },
-    {
-      heading: `EMPLOYEE BENEFITS`,
-      imgSrc: require(`assets/img/employee-benefits-icon.svg`),
-      content: (
-        <React.Fragment>
-          <ul className={styles.servicesListUl}>
-            <li>Medical/Dental/Vision Plans</li>
-            <li>Direct Deposit</li>
-            <li>Designated Account Manager</li>
-            <li>Employee of the Month</li>
-          </ul>
-        </React.Fragment>
-      ),
-    },
-  ],
 }
 
-const EmployeeResources = () => {
-  console.log("content.servicesBlurb:", content.servicesBlurb)
+const Contact = () => {
+  console.log("content.contactBlurb:", content.contactBlurb)
   return (
     <React.Fragment>
-      <Hero content={content.hero} bgSrc={bg} />
       <div className={styles.contentWrapper}>
         <div className={styles.content}>
-          <Blurb content={content.servicesBlurb}>
+          <Blurb content={content.contactBlurb}>
             <React.Fragment>
-              <div className={styles.servicesContent}>
-                <div className={styles.pText}>
+              <div className={styles.contactContent}>
+                <div className={styles.form}></div>
+                <div className={styles.sideContent}>
                   <p>
-                    The answer is simple, to maximize your RESOURCES! Marathon
-                    Personnel has over 50 years of combined experience. We stay
-                    on top of recruiting trends to maximize your return on
-                    investment.
+                    With the increasing number of confirmed Coronavirus
+                    (COVID-19) cases, we are choosing to put our candidates and
+                    staff first by closing our doors temporarily. No walk-ins
+                    will be accepted until further notice, to help slow the
+                    spread of the virus.
                   </p>
+
                   <p>
-                    Marathon Personnel knows that finding the right candidate is
-                    essential for production and service needs. We thoroughly
-                    evaluate each potential candidate to affirm proficiency and
-                    reliability so that they can rhythmically mesh into your
-                    companies’ work culture, which in turn reduces your
-                    administrative work.
+                    If you have any questions or would like to apply, please
+                    call or text (832)767-7054.
                   </p>
+
                   <p>
-                    Our hiring programs are highly customizable. We offer
-                    different types of drug testing and background screening to
-                    best fit your employment practices. Marathon Personnel
-                    handles account management, unemployment claims, worker’s
-                    compensation claims, and payroll.
+                    For more information about Coronavirus, please visit
+                    www.CDC.gov
                   </p>
-                  <p>Leaving YOU with more time and resources!</p>
+
+                  <ul>
+                    <li>Marathon Personnel</li>
+                    <li>
+                      711 W. Bay Area Blvd. STE. 675, Webster, TX 77598, US
+                    </li>
+
+                    <li>
+                      <a href="tel:+18327695850">(832) 769-5850</a>
+                    </li>
+                  </ul>
                 </div>
-                <div className={styles.servicesListWrapper}>
-                  <div className={styles.servicesList}>
-                    <h3>Services</h3>
-                    <ul className={styles.servicesListUl}>
-                      <li>• Background Screening</li>
-                      <li>• Drug Testing</li>
-                      <li>• Worker's Comp Insurance</li>
-                      <li>• Weekly Payroll Services</li>
-                      <li>• Skilled-based Assessments</li>
-                      <li>• Safety Orientation</li>
-                      <li>• Human Resource Function</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className={styles.contentBoxesWrapper}>
-                {content.contentBoxesStaticContent.map((contentBox, i) => {
-                  return <ContentBoxStatic content={contentBox} key={i} />
-                })}
               </div>
             </React.Fragment>
           </Blurb>
@@ -152,4 +88,4 @@ const EmployeeResources = () => {
   )
 }
 
-export default EmployeeResources
+export default Contact
