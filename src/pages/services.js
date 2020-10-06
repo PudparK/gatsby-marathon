@@ -1,5 +1,8 @@
 import React from "react"
 
+//Components
+import Services from "components/Services"
+
 export default () => {
-  return <h1>Test</h1>
+  return <Services />
 }

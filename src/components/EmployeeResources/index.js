@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./styles.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 //Components
 import Blurb from "components/Blurb"

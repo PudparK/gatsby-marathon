@@ -12,7 +12,6 @@ const Blurb = ({ content, darkGray, children }) => {
     >
       <div className={styles.blurb}>
         <h2>{content.headerText}</h2>
-        <p>{content.pText}</p>
         {children}
       </div>
     </div>

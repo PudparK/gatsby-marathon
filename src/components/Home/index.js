@@ -15,9 +15,7 @@ const content = {
   hero: { headerText: `RUN WITH US.`, buttonText: `APPLY NOW` },
   blurb: {
     headerText: `WELCOME`,
-    pText: `Marathon Personnel strives to connect individuals to
-    their optimal job position by providing essential guidance
-    needed to thrive within their industry.`,
+    pText: ``,
   },
   welcomeBlurb: {
     headerText: `WELCOME`,
@@ -27,7 +25,6 @@ const content = {
   },
   eventsBlurb: {
     headerText: `EVENTS`,
-    pText: `With the increasing number of confirmed Coronavirus (COVID-19) cases, we are choosing to put our candidates and staff first by closing our doors temporarily. No walk-ins will be accepted until further notice, to help slow the spread of the virus.`,
     darkGray: true,
   },
   contentBoxes: [
@@ -114,7 +111,13 @@ const Home = () => {
       <Hero content={content.hero} bgSrc={bg} />
       <div className={styles.contentWrapper}>
         <div className={styles.content}>
-          <Blurb content={content.welcomeBlurb} />
+          <Blurb content={content.welcomeBlurb}>
+            <p>
+              Marathon Personnel strives to connect individuals to their optimal
+              job position by providing essential guidance needed to thrive
+              within their industry.
+            </p>
+          </Blurb>
           <div className={styles.contentBoxesWrapper}>
             {content.contentBoxes.map((box, i) => {
               return <ContentBox content={box} key={i} />
@@ -124,6 +127,12 @@ const Home = () => {
             content={content.eventsBlurb}
             darkGray={content.eventsBlurb.darkGray}
           >
+            <p>
+              With the increasing number of confirmed Coronavirus (COVID-19)
+              cases, we are choosing to put our candidates and staff first by
+              closing our doors temporarily. No walk-ins will be accepted until
+              further notice, to help slow the spread of the virus.
+            </p>
             <p>
               If you have any questions or would like to apply, please call or
               text{" "}
