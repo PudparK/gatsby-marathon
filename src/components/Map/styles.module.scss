@@ -1,0 +1,33 @@
+/* This sets the entire app's body to have 0 margin */
+@import "../../assets/scss/main.scss";
+
+.map {
+  width: 100%;
+  position: relative;
+}
+
+.map-base {
+  background: var(--lightblue); // TODO #11 - Turn into Theme option
+  height: 30vh;
+  width: 100%;
+  position: relative;
+  @include large-devices {
+    margin: 0 auto;
+    height: 60vh;
+    top: 0;
+  }
+}
+
+.map-loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: #808080;
+  width: 100%;
+  height: 4em;
+  line-height: 4em;
+  text-align: center;
+  margin: auto;
+}
