@@ -57,7 +57,7 @@
   }
 }
 
-.contactContent {
+.servicesContent {
   display: grid;
   grid-template-columns: auto;
   @include medium-devices {
@@ -70,18 +70,21 @@
       margin-bottom: 0;
     }
   }
-  .contactListWrapper {
-    .contactList {
-      background-color: #ffffff;
-      border-bottom: 0.5rem solid var(--primary);
-      padding: 2rem;
-      box-shadow: 0.4rem 0.5rem 1rem -0.3rem #000000;
+  .servicesListWrapper {
+    .servicesList {
+      margin-bottom: 5rem;
+      @include medium-devices {
+        padding: 2rem;
+        background-color: #ffffff;
+        box-shadow: 0.4rem 0.5rem 1rem -0.3rem #000000;
+        border-bottom: 0.5rem solid var(--primary);
+      }
       h3 {
         color: var(--primary);
         font-weight: 600;
         margin-bottom: 1rem;
       }
-      .contactListUl {
+      .servicesListUl {
         li {
           margin-bottom: 1rem;
         }

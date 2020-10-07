@@ -18,7 +18,6 @@ const content = {
   },
   eventsBlurb: {
     headerText: `EVENTS`,
-    pText: `With the increasing number of confirmed Coronavirus (COVID-19) cases, we are choosing to put our candidates and staff first by closing our doors temporarily. No walk-ins will be accepted until further notice, to help slow the spread of the virus.`,
     darkGray: true,
   },
   contentBoxesStaticContent: [
@@ -34,7 +33,7 @@ const content = {
           <ul>
             <li>
               Like Our{" "}
-              <a href="https://www.facebook.com/pg/247WFP/reviews/?ref=page_internal">
+              <a href=" https://www.facebook.com/Marathon-Personnel-107691901106648">
                 Facebook
               </a>{" "}
               Page!
@@ -129,6 +128,12 @@ const EmployeeResources = () => {
             content={content.eventsBlurb}
             darkGray={content.eventsBlurb.darkGray}
           >
+            <p>
+              With the increasing number of confirmed Coronavirus (COVID-19)
+              cases, we are choosing to put our candidates and staff first by
+              closing our doors temporarily. No walk-ins will be accepted until
+              further notice, to help slow the spread of the virus.
+            </p>
             <p>
               If you have any questions or would like to apply, please call or
               text{" "}

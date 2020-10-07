@@ -3,8 +3,8 @@ import styles from "./styles.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faFacebook,
-  faTwitter,
-  faInstagram,
+  // faTwitter,
+  // faInstagram,
 } from "@fortawesome/free-brands-svg-icons"
 
 export default ({ size, links }) => {
@@ -12,11 +12,11 @@ export default ({ size, links }) => {
     <div className={styles.iconBar}>
       <ul sx={{ color: "primary" }}>
         <li>
-          <a href="https://www.facebook.com">
+          <a href=" https://www.facebook.com/Marathon-Personnel-107691901106648">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://www.twitter.com">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
@@ -25,7 +25,7 @@ export default ({ size, links }) => {
           <a href="https://www.instagram.com">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   )

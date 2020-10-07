@@ -48,14 +48,18 @@ const Contact = () => {
                   www.CDC.gov
                 </p>
 
-                <ul>
-                  <li>Marathon Personnel</li>
-                  <li>711 W. Bay Area Blvd. STE. 675, Webster, TX 77598, US</li>
+                <div>
+                  <ul>
+                    <li>Marathon Personnel</li>
+                    <li>
+                      2600 South Shore Blvd. Suite 300 League City, Tx 77598
+                    </li>
 
-                  <li>
-                    <a href="tel:+18327695850">(832) 769-5850</a>
-                  </li>
-                </ul>
+                    <li>
+                      <a href="tel:+12819847309">281.984.7309</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </Container>

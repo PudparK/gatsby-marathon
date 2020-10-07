@@ -25,7 +25,7 @@ function Footer() {
           </div>
           <div className={styles.small}>
             <p>
-              Copyright © 2018 247 Workforce Personnel, LLC
+              Copyright © 2018 Marathon Personnel, LLC
               <br />
               All Rights Reserved.
             </p>

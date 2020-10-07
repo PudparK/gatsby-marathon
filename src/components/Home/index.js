@@ -93,7 +93,7 @@ const content = {
               </li>
               <li>
                 {" "}
-                <a className="bold" href="tel:+8327695850">
+                <a className="bold" href="tel:+2819847309">
                   <FontAwesomeIcon icon={faPhone} size="lg" />
                 </a>
               </li>

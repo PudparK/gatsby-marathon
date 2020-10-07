@@ -1,8 +1,6 @@
 import React from "react"
 import propTypes from "prop-types"
 import styles from "./styles.module.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons"
 
 //Components
 import Button from "components/Button"
@@ -10,6 +8,14 @@ import Button from "components/Button"
 const ContentBox = ({ content }) => {
   return (
     <div className={styles.contentBox}>
+      <div className={styles.heading}>
+        <h2>
+          {content.heading}
+          {/* {" "} */}
+          {/* <FontAwesomeIcon icon={faArrowCircleDown} size="sm" /> */}
+        </h2>
+      </div>
+
       <div
         className={styles.bgImage}
         style={{
@@ -27,12 +33,6 @@ const ContentBox = ({ content }) => {
             </a>
           </div>
         ) : null}
-      </div>
-      <div className={styles.heading}>
-        <h2>
-          {content.heading}{" "}
-          <FontAwesomeIcon icon={faArrowCircleDown} size="sm" />
-        </h2>
       </div>
     </div>
   )

@@ -44,9 +44,27 @@
   .contactContentWrapper {
     display: grid;
     grid-template-columns: auto;
+    margin-bottom: 5rem;
     @include medium-devices {
-      grid-template-columns: 1fr 1fr;
-      column-gap: 2rem;
+      grid-template-columns: 40% 60%;
+      column-gap: 4rem;
+      margin-bottom: 15rem;
+    }
+    .sideContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      margin: 5rem auto;
+      p {
+        margin-bottom: 2.5rem;
+        line-height: 2rem;
+      }
+      div {
+        width: 100%;
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
     }
   }
 }
