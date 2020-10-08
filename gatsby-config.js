@@ -1,4 +1,5 @@
 const path = require("path")
+require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
@@ -30,6 +31,31 @@ module.exports = {
       options: {
         target: "_blank",
         rel: "noopener noreferrer",
+      },
+    },
+    {
+      resolve: "gatsby-source-gravityforms",
+      options: {
+        // Base URL needs to include protocol (http/https)
+        baseUrl: "https://marathon.132graphics.com/",
+        // Gravity Forms API
+        api: {
+          key: process.env.CONSUMER_KEY,
+          secret: process.env.CONSUMER_SECRET,
+        },
+        // Basic Auth
+        // basicAuth: {
+        //   username: "USERNAME",
+        //   password: "PASSWORD",
+        // },
+        // ignoreFields: [
+        //   // Top level fields within the Gravity Forms return
+        //   // to ignore.
+        //   // Default ignore is 'notifications'. To keep this
+        //   // as set, remove the ignoreFields setting from here.
+        //   // If adding more fields, you will need to include
+        //   // notifications to ensure it is ignored.
+        // ],
       },
     },
   ],

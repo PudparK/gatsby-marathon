@@ -1,0 +1,29 @@
+@import "../../assets/scss/main.scss";
+.blurbWrapper {
+  padding: 5rem 2rem;
+  .blurb {
+    width: 100%;
+    @include medium-devices {
+      max-width: 102.4rem;
+      margin: 0 auto;
+    }
+    h2 {
+      margin-bottom: 1rem;
+    }
+    p {
+      width: 100%;
+      line-height: 2.8rem;
+    }
+  }
+  @include medium-devices {
+    .blurb {
+      margin: 1.4em auto;
+      p {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+.bgDarkGray {
+  background-color: rgba(145, 147, 146, 0.6);
+}

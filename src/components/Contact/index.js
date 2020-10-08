@@ -3,17 +3,18 @@ import styles from "./styles.module.scss"
 
 //Components
 import Blurb from "components/Blurb"
-import Container from "components/Container"
+import Events from "components/Events"
 import Form from "components/Form"
+import Container from "components/Container"
+// import GravityForm from "gatsby-gravityforms-component"
 import Map from "components/Map"
 const content = {
-  hero: { headerText: `RUN WITH US.`, buttonText: `APPLY NOW` },
+  hero: { headerText: `RUN WITH US`, buttonText: `APPLY NOW` },
   contactBlurb: {
     headerText: `Contact`,
   },
   eventsBlurb: {
     headerText: `EVENTS`,
-    pText: `With the increasing number of confirmed Coronavirus (COVID-19) cases, we are choosing to put our candidates and staff first by closing our doors temporarily. No walk-ins will be accepted until further notice, to help slow the spread of the virus.`,
     darkGray: true,
   },
 }
@@ -64,29 +65,10 @@ const Contact = () => {
             </div>
           </Container>
           <Map />
-          <Blurb
-            content={content.eventsBlurb}
+          <Events
+            content={content.eventsEvents}
             darkGray={content.eventsBlurb.darkGray}
-          >
-            <p>
-              With the increasing number of confirmed Coronavirus (COVID-19)
-              cases, we are choosing to put our candidates and staff first by
-              closing our doors temporarily. No walk-ins will be accepted until
-              further notice, to help slow the spread of the virus.
-            </p>
-            <p>
-              If you have any questions or would like to apply, please call or
-              text{" "}
-              <a href="tel:+8327677054">
-                <strong>(832)767-7054</strong>
-              </a>
-              .
-            </p>
-            <p>
-              For more information about Coronavirus, please visit{" "}
-              <a href="https://www.cdc.gov">www.cdc.gov</a>.
-            </p>
-          </Blurb>
+          ></Events>
         </div>
       </div>
     </React.Fragment>

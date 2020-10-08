@@ -15,9 +15,9 @@ function Footer() {
           </div>
           <div className={styles.address}>
             <p>
-              711 W. BAY AREA BLVD. STE. 675
+              2600 South Shore Blvd. Suite 300
               <br />
-              WEBSTER, TX 77598
+              League City, Tx 77598
             </p>
           </div>
           <div>

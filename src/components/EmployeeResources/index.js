@@ -6,13 +6,14 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 //Components
 import Blurb from "components/Blurb"
 import ContentBoxStatic from "components/ContentBoxStatic"
+import Events from "components/Events"
 import Hero from "components/Hero"
 
 //Assets
 const bg = require(`../../assets/img/about-us.jpg`)
 
 const content = {
-  hero: { headerText: `RUN WITH US.`, buttonText: `APPLY NOW` },
+  hero: { headerText: `RUN WITH US`, buttonText: `APPLY NOW` },
   emplyeeResourceBlurb: {
     headerText: `EMPLOYEE RESOURCES`,
   },
@@ -124,29 +125,10 @@ const EmployeeResources = () => {
               return <ContentBoxStatic content={contentBox} key={i} />
             })}
           </div>
-          <Blurb
-            content={content.eventsBlurb}
+          <Events
+            content={content.eventsEvents}
             darkGray={content.eventsBlurb.darkGray}
-          >
-            <p>
-              With the increasing number of confirmed Coronavirus (COVID-19)
-              cases, we are choosing to put our candidates and staff first by
-              closing our doors temporarily. No walk-ins will be accepted until
-              further notice, to help slow the spread of the virus.
-            </p>
-            <p>
-              If you have any questions or would like to apply, please call or
-              text{" "}
-              <a href="tel:+8327677054">
-                <strong>(832)767-7054</strong>
-              </a>
-              .
-            </p>
-            <p>
-              For more information about Coronavirus, please visit{" "}
-              <a href="https://www.cdc.gov">www.cdc.gov</a>.
-            </p>
-          </Blurb>
+          ></Events>
         </div>
       </div>
     </React.Fragment>

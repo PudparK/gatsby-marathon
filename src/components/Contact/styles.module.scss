@@ -48,12 +48,12 @@
     @include medium-devices {
       grid-template-columns: 40% 60%;
       column-gap: 4rem;
-      margin-bottom: 15rem;
+      margin-bottom: 10rem;
     }
     .sideContent {
       display: flex;
       flex-direction: column;
-      justify-content: start;
+      justify-content: flex-start;
       align-items: center;
       margin: 5rem auto;
       p {
