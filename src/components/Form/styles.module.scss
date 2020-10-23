@@ -7,11 +7,21 @@
     }
     label,
     input,
+    select,
     textarea,
     input[type="submit"] {
       display: block;
       width: 100%;
       margin-bottom: 0.5rem;
+    }
+    select {
+      padding: 1rem 0;
+      background-color: rgba(128, 128, 128, 0.1);
+      outline: none;
+      border: none;
+      &:disabled {
+        color: var(--lightgray);
+      }
     }
     input,
     textarea {
