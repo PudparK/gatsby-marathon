@@ -26,9 +26,9 @@ const content = {
       content: (
         <React.Fragment>
           <p>
-            247WFP offers flexible payment plans and we offer pre-paid services
-            at a reduced price. Our different level mark-ups encompass the level
-            of services needed.
+            Marathon Personnel offers flexible payment plans and we offer
+            pre-paid services at a reduced price. Our different level mark-ups
+            encompass the level of services needed.
           </p>
         </React.Fragment>
       ),

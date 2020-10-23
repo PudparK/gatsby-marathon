@@ -33,22 +33,5 @@ module.exports = {
         rel: "noopener noreferrer",
       },
     },
-    {
-      resolve: "gatsby-source-gravityforms",
-      options: {
-        // Base URL needs to include protocol (http/https)
-        baseUrl: "https://marathon.132graphics.com/",
-        // Gravity Forms API
-        api: {
-          key: process.env.CONSUMER_KEY,
-          secret: process.env.CONSUMER_SECRET,
-        },
-        //Basic Auth
-        basicAuth: {
-          username: process.env.USERNAME,
-          password: process.env.PASSWORD,
-        },
-      },
-    },
   ],
 }
