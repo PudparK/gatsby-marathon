@@ -37,6 +37,13 @@ const Form = () => {
         method="post"
         action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeNETctovcUBOdcOgJDzbOgzooyiIbXjPYc3xx8q1Z9mazaxg/formResponse"
       >
+        <label for="entry.171188399">
+          Choose
+          <select id="choose" name="entry.171188399">
+            <option value="Employee">Employee</option>
+            <option value="Employer">Employer</option>
+          </select>
+        </label>
         <label for="entry.746198485">
           Name
           <input
