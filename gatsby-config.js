@@ -11,6 +11,16 @@ module.exports = {
 
   /* Your site config here */
   plugins: [
+    {
+      resolve: `gatsby-source-wordpress-experimental`,
+      options: {
+        url: process.env.WPGRAPHQL_URL,
+        schema: {
+          typePrefix: `Wp`,
+          timeout: 100000,
+        },
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-layouts`,
     `gatsby-plugin-theme-ui`,
@@ -34,28 +44,23 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: `WPGraphQL`,
+        fieldName: `wpcontent`,
+        url: `https://marathon.132graphics.com/graphql`,
+      },
+    },
+    {
       resolve: "gatsby-source-gravityforms",
       options: {
         // Base URL needs to include protocol (http/https)
-        baseUrl: "https://marathon.132graphics.com/",
+        baseUrl: "https://marathon.132graphics.com",
         // Gravity Forms API
         api: {
           key: process.env.CONSUMER_KEY,
           secret: process.env.CONSUMER_SECRET,
         },
-        // Basic Auth
-        // basicAuth: {
-        //   username: "USERNAME",
-        //   password: "PASSWORD",
-        // },
-        // ignoreFields: [
-        //   // Top level fields within the Gravity Forms return
-        //   // to ignore.
-        //   // Default ignore is 'notifications'. To keep this
-        //   // as set, remove the ignoreFields setting from here.
-        //   // If adding more fields, you will need to include
-        //   // notifications to ensure it is ignored.
-        // ],
       },
     },
   ],

@@ -4,7 +4,7 @@ import styles from "./styles.module.scss"
 //Components
 import Blurb from "components/Blurb"
 import Events from "components/Events"
-import Form from "components/Form"
+import GravityForm from "components/GravityForm"
 import Container from "components/Container"
 // import GravityForm from "gatsby-gravityforms-component"
 import Map from "components/Map"
@@ -29,7 +29,7 @@ const Contact = () => {
           <Container>
             <div className={styles.contactContentWrapper}>
               <div className={styles.form}>
-                <Form />
+                <GravityForm />
               </div>
               <div className={styles.sideContent}>
                 <p>
