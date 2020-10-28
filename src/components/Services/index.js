@@ -67,11 +67,10 @@ const content = {
   ],
 }
 
-const EmployeeResources = () => {
-  console.log("content.servicesBlurb:", content.servicesBlurb)
+const EmployeeResources = ({ page }) => {
   return (
     <React.Fragment>
-      <Hero content={content.hero} bgSrc={bg} />
+      <Hero content={content.hero} bgSrc={bg} page={page} />
       <div className={styles.contentWrapper}>
         <div className={styles.content}>
           <Blurb content={content.servicesBlurb}>

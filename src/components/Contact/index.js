@@ -20,7 +20,6 @@ const content = {
 }
 
 const Contact = () => {
-  console.log("content.contactBlurb:", content.contactBlurb)
   return (
     <React.Fragment>
       <div className={styles.contentWrapper}>

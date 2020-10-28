@@ -112,7 +112,6 @@ const content = {
 }
 
 const EmployeeResources = () => {
-  console.log("bg:", bg)
   return (
     <React.Fragment>
       <Hero content={content.hero} bgSrc={bg} />
@@ -121,7 +120,6 @@ const EmployeeResources = () => {
           <Blurb content={content.emplyeeResourceBlurb} />
           <div className={styles.contentBoxesWrapper}>
             {content.contentBoxesStaticContent.map((contentBox, i) => {
-              console.log("contentBox:", contentBox)
               return <ContentBoxStatic content={contentBox} key={i} />
             })}
           </div>
