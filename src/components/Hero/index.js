@@ -23,7 +23,13 @@ const Hero = ({ content, bgSrc, page }) => {
         <h1 className={classNames({ [styles.whiteHeader]: location() })}>
           {content.headerText}
         </h1>
-        <Button text={content.buttonText} />
+        <a
+          href="https://tfs.avionte.com/247-wfp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button text={content.buttonText} />
+        </a>
       </div>
     </div>
   )

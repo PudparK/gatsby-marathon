@@ -10,7 +10,7 @@ export default props => {
         color: "white",
       }}
     >
-      {props.text}
+      {props.text + " "} {props.children}
     </button>
   )
 }

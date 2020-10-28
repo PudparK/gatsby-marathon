@@ -85,10 +85,7 @@ const content = {
           <div className="flexUl">
             <ul>
               <li>
-                <a
-                  className="bold"
-                  href="mailto: recruiter@marathonpersonnel.com"
-                >
+                <a className="bold" href="mailto: hr@marathonpersonnel.com">
                   <FontAwesomeIcon icon={faEnvelope} size="lg" />
                 </a>
               </li>

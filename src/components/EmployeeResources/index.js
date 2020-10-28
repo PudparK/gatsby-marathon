@@ -101,8 +101,8 @@ const content = {
         <React.Fragment>
           <p>To update your direct deposit, W4, etc., email:</p>
           <p>
-            <a href="mailto:recruiter@marathon.com">
-              <FontAwesomeIcon icon={faEnvelope} /> recruiter@marathon.com
+            <a href="mailto:hr@marathon.com">
+              <FontAwesomeIcon icon={faEnvelope} /> hr@marathon.com
             </a>
           </p>
         </React.Fragment>
