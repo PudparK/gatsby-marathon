@@ -8,7 +8,7 @@ import Events from "components/Events"
 import Hero from "components/Hero"
 
 //Assets
-const bg = require(`../../assets/img/about-us.jpg`)
+const bg = require(`../../assets/img/services.jpg`)
 
 const content = {
   hero: { headerText: `RUN WITH US`, buttonText: `APPLY NOW` },
