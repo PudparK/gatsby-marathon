@@ -5,7 +5,7 @@ import styles from "./styles.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 
-const MenuLinks = () => {
+const MenuLinks = ({ onClose }) => {
   const links = [
     {
       label: `HOME`,
@@ -34,7 +34,12 @@ const MenuLinks = () => {
     if (link.external) {
       return (
         <li key={i}>
-          <a href={link.uri} target="_blank" rel="noopener noreferrer">
+          <a
+            href={link.uri}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={onClose}
+          >
             {link.label}{" "}
             <FontAwesomeIcon icon={faExternalLinkAlt} color="var(--darkgray)" />
           </a>
@@ -44,11 +49,15 @@ const MenuLinks = () => {
     return (
       <li key={i}>
         {link.anchor ? (
-          <AnchorLink to={link.uri} activeClassName={styles.active}>
+          <AnchorLink
+            to={link.uri}
+            activeClassName={styles.active}
+            onClick={onClose}
+          >
             {link.label}
           </AnchorLink>
         ) : (
-          <Link to={link.uri} activeClassName={styles.active}>
+          <Link to={link.uri} activeClassName={styles.active} onClick={onClose}>
             {link.label}
           </Link>
         )}

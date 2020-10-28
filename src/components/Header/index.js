@@ -57,7 +57,13 @@ export default function Header({ className }) {
           setToggle={() => {
             toggleFunc(false)
           }}
-          content={<MenuLinks />}
+          content={
+            <MenuLinks
+              onClose={() => {
+                setToggle(false)
+              }}
+            />
+          }
         />
       </div>
       <div className={styles.headerSpace}></div>
