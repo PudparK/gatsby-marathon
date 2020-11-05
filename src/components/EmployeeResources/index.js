@@ -87,8 +87,9 @@ const content = {
             <br />
           </p>
           <p>
-            <a href="mailto:invoicing@marathon.com">
-              <FontAwesomeIcon icon={faEnvelope} /> invoicing@marathon.com
+            <a href="mailto:invoicing@marathonpersonnel.com">
+              <FontAwesomeIcon icon={faEnvelope} />{" "}
+              invoicing@marathonpersonnel.com
             </a>
           </p>
         </React.Fragment>
@@ -101,8 +102,8 @@ const content = {
         <React.Fragment>
           <p>To update your direct deposit, W4, etc., email:</p>
           <p>
-            <a href="mailto:hr@marathon.com">
-              <FontAwesomeIcon icon={faEnvelope} /> hr@marathon.com
+            <a href="mailto:hr@marathonpersonnel.com">
+              <FontAwesomeIcon icon={faEnvelope} /> hr@marathonpersonnel.com
             </a>
           </p>
         </React.Fragment>
