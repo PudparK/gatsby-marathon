@@ -41,10 +41,7 @@ const content = {
             </li>
             <li>
               Leave a Review on{" "}
-              <a href="https://www.google.com/search?q=247+workforce+personnel+llc&rlz=1C1CHZL_enUS821US821&oq=247+wor&aqs=chrome.1.69i57j0l2j69i60l3.5071j0j4&sourceid=chrome&ie=UTF-8">
-                Google
-              </a>
-              !
+              <a href="https://goo.gl/maps/M2zcpk1S21mcuRdi9">Google</a>!
             </li>
           </ul>
         </React.Fragment>
