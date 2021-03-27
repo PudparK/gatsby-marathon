@@ -1,3 +1,6 @@
+import React from "react"
+import styles from "./styles.module.scss"
+
 const Netliform = () => {
     return (
         <div className={styles.netliformContainer}>
@@ -27,3 +30,5 @@ const Netliform = () => {
         </div>
     );
 }
+
+export default Netliform
