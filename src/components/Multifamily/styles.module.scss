@@ -1,0 +1,94 @@
+@import "../../assets/scss/main.scss";
+
+.contentWrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    bottom: -10%;
+    left: 10%;
+    z-index: -1;
+    background: url("assets/img/bg-texture.jpg") left center no-repeat;
+    background-size: 50%;
+    @include medium-devices {
+      background-size: 60rem;
+      left: 74%;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -16%;
+    left: 0;
+    z-index: -1;
+    transform: rotate(180deg);
+    background: url("assets/img/bg-texture.jpg") right center no-repeat;
+    background-size: 50%;
+    @include medium-devices {
+      background-size: 60rem;
+    }
+  }
+  .content {
+    @include medium-devices {
+      margin: 0 auto;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.contentBoxesWrapper {
+  width: 100%;
+  max-width: 102.4rem;
+  margin: 0 auto 5rem auto;
+  padding: 0 2rem;
+  @include medium-devices {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(32.8rem, 1fr));
+    grid-column-gap: 2rem;
+  }
+}
+
+.servicesContent {
+  display: grid;
+  grid-template-columns: auto;
+  @include medium-devices {
+    grid-template-columns: auto auto;
+  }
+  .pText {
+    margin-bottom: 2.5rem;
+    @include medium-devices {
+      margin-right: 5rem;
+      margin-bottom: 0;
+    }
+  }
+  .servicesListWrapper {
+    .servicesList {
+      margin-bottom: 5rem;
+      @include medium-devices {
+        padding: 2rem;
+        background-color: #ffffff;
+        box-shadow: 0.4rem 0.5rem 1rem -0.3rem #000000;
+        border-bottom: 0.5rem solid var(--primary);
+      }
+      h3 {
+        color: var(--primary);
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      .servicesListUl {
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -24,6 +24,10 @@ const MenuLinks = ({ onClose }) => {
       uri: `/contact`,
     },
     {
+      label: `MULTI-FAMILY `,
+      uri: `/multifamily    `,
+    },
+    {
       label: `CAREERS`,
       uri: `https://tfs.avionte.com/247-wfp`,
       external: true,

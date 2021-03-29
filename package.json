@@ -16,6 +16,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@ccalamos/gatsby-source-googlemaps-static": "^3.0.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
@@ -40,7 +41,6 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-source-google-places": "^0.0.6",
-    "gatsby-source-googlemaps-static": "^1.1.12",
     "gatsby-source-graphql": "^2.7.2",
     "gatsby-source-gravityforms": "^1.0.15",
     "gatsby-source-thirdparty": "^1.0.6",
