@@ -11,9 +11,9 @@ import Hero from "components/Hero"
 const bg = require(`../../assets/img/services.jpg`)
 
 const content = {
-  hero: { headerText: `RUN WITH US`, buttonText: `APPLY NOW` },
+  hero: { headerText: `MULTI-FAMILY RECRUITMENT`, buttonText: `APPLY NOW` },
   servicesBlurb: {
-    headerText: `SERVICES`,
+    headerText: `WHERE JOB SEEKERS AND EMPLOYERS COME TOGETHER`,
   },
   eventsBlurb: {
     headerText: `EVENTS`,
@@ -36,7 +36,7 @@ const content = {
         <React.Fragment>
           <p>Our training program ensures consistent personnel with high quality services to meet the needs of each property. We like to hire the best and train them to do precise jobs. Our pipeline employees acquire the skills and values necessary to contribute to a winning team.</p>
           <div>
-            <h3>Current Training Programs</h3>
+            <p>Current Training Programs</p>
             <ul>
               <li>• Coming Soon</li>
             </ul>

@@ -18,6 +18,9 @@
       background-size: 60rem;
       left: 74%;
     }
+    @include min-width(2000px) {
+      left: 76%;
+    }
   }
   &::after {
     content: "";
@@ -61,7 +64,7 @@
   display: grid;
   grid-template-columns: auto;
   @include medium-devices {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 400px;
   }
   .pText {
     margin-bottom: 2.5rem;

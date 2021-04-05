@@ -3,6 +3,8 @@ import React from "react"
 //Components
 import Multifamily from "components/Multifamily"
 
-export default ({ location }) => {
+const MultifamilyPage = ({ location }) => {
   return <Multifamily page={location} />
 }
+
+export default MultifamilyPage

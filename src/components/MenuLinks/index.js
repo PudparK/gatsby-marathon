@@ -25,7 +25,7 @@ const MenuLinks = ({ onClose }) => {
     },
     {
       label: `MULTI-FAMILY `,
-      uri: `/multifamily    `,
+      uri: `/multifamily`,
     },
     {
       label: `CAREERS`,

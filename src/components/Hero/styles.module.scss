@@ -24,10 +24,18 @@
   }
   h1 {
     color: #000000;
-    font-size: 8rem;
+    font-size: 10vw;
     font-weight: bold;
-    line-height: 9rem;
+    line-height: 9.5vw;
     margin-bottom: 2rem;
+
+    @include large-devices {
+      font-size: 8rem;
+      line-height: 9rem;
+    }
+  }
+  h1.LongText {
+    font-size: 6rem;
   }
   .whiteHeader {
     color: #ffffff;

@@ -17,6 +17,9 @@
       background-size: 60rem;
       left: 74%;
     }
+    @include min-width(2000px) {
+      left: 76%;
+    }
   }
   &::after {
     content: "";
