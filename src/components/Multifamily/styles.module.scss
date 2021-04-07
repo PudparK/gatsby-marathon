@@ -64,7 +64,7 @@
   display: grid;
   grid-template-columns: auto;
   @include medium-devices {
-    grid-template-columns: 1fr 400px;
+    grid-template-columns: 1fr 41rem;
   }
   .pText {
     margin-bottom: 2.5rem;

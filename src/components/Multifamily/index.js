@@ -8,7 +8,7 @@ import Events from "components/Events"
 import Hero from "components/Hero"
 
 //Assets
-const bg = require(`../../assets/img/services.jpg`)
+const bg = require(`../../assets/img/multi-family-hero.jpg`)
 
 const content = {
   hero: { headerText: `MULTI-FAMILY RECRUITMENT`, buttonText: `APPLY NOW` },
@@ -22,7 +22,7 @@ const content = {
   contentBoxesStaticContent: [
     {
       heading: `CANDIDATE RESOURCES`,
-      imgSrc: require(`assets/img/billing-sheet-icon.svg`),
+      imgSrc: require(`assets/img/multi-fam-jobs-icon.svg`),
       content: (
         <React.Fragment>
           <p>Marathon Personnel’s user friendly search engine connects job seekers with current openings. Discover jobs in your area today!</p>
@@ -31,7 +31,7 @@ const content = {
     },
     {
       heading: `EMPLOYERS`,
-      imgSrc: require(`assets/img/paycheck-stub-icon.svg`),
+      imgSrc: require(`assets/img/multi-fam-employer-icon.svg`),
       content: (
         <React.Fragment>
           <p>Our training program ensures consistent personnel with high quality services to meet the needs of each property. We like to hire the best and train them to do precise jobs. Our pipeline employees acquire the skills and values necessary to contribute to a winning team.</p>
@@ -63,7 +63,7 @@ const Multifamily = ({ page }) => {
                 </div>
                 <div className={styles.servicesListWrapper}>
                   <div className={styles.servicesList}>
-                    <h3>Where job seekers and employers come together</h3>
+                    <h3>Services</h3>
                     <ul className={styles.servicesListUl}>
                       <li>• Management & Maintenance</li>
                       <li>• Supervisors</li>
