@@ -11,7 +11,7 @@ const Blurb = ({ content, darkGray, children }) => {
       })}
     >
       <div className={styles.blurb}>
-        <h2>{content.headerText}</h2>
+        <h2 className={classNames({ [styles.headingSpace]: children })}>{content.headerText}</h2>
         {children}
       </div>
     </div>
