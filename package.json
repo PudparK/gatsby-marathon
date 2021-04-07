@@ -16,7 +16,6 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@ccalamos/gatsby-source-googlemaps-static": "^3.0.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
