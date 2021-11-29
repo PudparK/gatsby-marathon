@@ -1,6 +1,6 @@
 import React from "react"
 import classNames from "classnames"
-import styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss"
 import PropTypes from "prop-types"
 
 //Components

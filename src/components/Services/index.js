@@ -1,11 +1,11 @@
 import React from "react"
-import styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss"
 
 //Components
 import Blurb from "components/Blurb"
-import ContentBoxStatic from "components/ContentBoxStatic"
-import Events from "components/Events"
 import Hero from "components/Hero"
+import Events from "components/Events"
+import ContentBoxStatic from "components/ContentBoxStatic"
 
 //Assets
 const bg = require(`../../assets/img/services.jpg`)

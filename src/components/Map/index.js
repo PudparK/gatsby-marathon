@@ -1,8 +1,8 @@
 import React from "react"
-import styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss"
 import PropTypes from "prop-types"
 import L from "leaflet"
-import { Map as BaseMap, Marker, TileLayer } from "react-leaflet"
+import { MapContainer as BaseMap, Marker, TileLayer } from "react-leaflet"
 
 const isDomAvailable = typeof window !== "undefined"
 

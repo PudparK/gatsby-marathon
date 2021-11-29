@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss"
 import logoSrc from "assets/img/logo.png"
 
 import IconBar from "components/IconBar"
