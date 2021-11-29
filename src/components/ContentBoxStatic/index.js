@@ -1,6 +1,6 @@
 import React from "react"
 import propTypes from "prop-types"
-import styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss"
 
 //Components
 import Button from "components/Button"

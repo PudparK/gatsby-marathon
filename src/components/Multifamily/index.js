@@ -1,11 +1,11 @@
 import React from "react"
-import styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss"
 
 //Components
 import Blurb from "components/Blurb"
-import ContentBoxStatic from "components/ContentBoxStatic"
-import Events from "components/Events"
 import Hero from "components/Hero"
+import Events from "components/Events"
+import ContentBoxStatic from "components/ContentBoxStatic"
 
 //Assets
 const bg = require(`../../assets/img/multi-family-hero.jpg`)
@@ -25,7 +25,10 @@ const content = {
       imgSrc: require(`assets/img/multi-fam-jobs-icon.svg`),
       content: (
         <React.Fragment>
-          <p>Marathon Personnel’s user friendly search engine connects job seekers with current openings. Discover jobs in your area today!</p>
+          <p>
+            Marathon Personnel’s user friendly search engine connects job
+            seekers with current openings. Discover jobs in your area today!
+          </p>
         </React.Fragment>
       ),
     },
@@ -34,7 +37,13 @@ const content = {
       imgSrc: require(`assets/img/multi-fam-employer-icon.svg`),
       content: (
         <React.Fragment>
-          <p>Our training program ensures consistent personnel with high quality services to meet the needs of each property. We like to hire the best and train them to do precise jobs. Our pipeline employees acquire the skills and values necessary to contribute to a winning team.</p>
+          <p>
+            Our training program ensures consistent personnel with high quality
+            services to meet the needs of each property. We like to hire the
+            best and train them to do precise jobs. Our pipeline employees
+            acquire the skills and values necessary to contribute to a winning
+            team.
+          </p>
           <div>
             <p>Current Training Programs</p>
             <ul>
@@ -57,9 +66,19 @@ const Multifamily = ({ page }) => {
             <React.Fragment>
               <div className={styles.servicesContent}>
                 <div className={styles.pText}>
-                  <p>Marathon Personnel is a full service temp-to-permanent employment agency serving the apartment industry in Houston and surrounding areas. We provide temporary, temp to hire and direct hire services for a variety of careers in the multi-family rental housing industry.</p>
                   <p>
-                    Our office staff is knowledgeable in the various career opportunities in the multifamily industry. If you feel you’re a great candidate for employment but have more questions about this industry, give us a call today.</p>
+                    Marathon Personnel is a full service temp-to-permanent
+                    employment agency serving the apartment industry in Houston
+                    and surrounding areas. We provide temporary, temp to hire
+                    and direct hire services for a variety of careers in the
+                    multi-family rental housing industry.
+                  </p>
+                  <p>
+                    Our office staff is knowledgeable in the various career
+                    opportunities in the multifamily industry. If you feel
+                    you’re a great candidate for employment but have more
+                    questions about this industry, give us a call today.
+                  </p>
                 </div>
                 <div className={styles.servicesListWrapper}>
                   <div className={styles.servicesList}>

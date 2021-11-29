@@ -1,13 +1,13 @@
 import React from "react"
-import styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons"
 
 //Components
-import ContentBox from "components/ContentBox"
 import Blurb from "components/Blurb"
-import Events from "components/Events"
 import Hero from "components/Hero"
+import Events from "components/Events"
+import ContentBox from "components/ContentBox"
 
 //Assets
 const bg = require(`../../assets/img/hero-bg.jpg`)

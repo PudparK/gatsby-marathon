@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss"
 import classNames from "classnames"
 import PropTypes from "prop-types"
 
@@ -11,7 +11,9 @@ const Blurb = ({ content, darkGray, children }) => {
       })}
     >
       <div className={styles.blurb}>
-        <h2 className={classNames({ [styles.headingSpace]: children })}>{content.headerText}</h2>
+        <h2 className={classNames({ [styles.headingSpace]: children })}>
+          {content.headerText}
+        </h2>
         {children}
       </div>
     </div>

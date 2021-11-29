@@ -2,7 +2,7 @@
 import { jsx } from "theme-ui"
 import React from "react"
 import { useState } from "react"
-import styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss"
 import classNames from "classnames"
 import PropTypes from "prop-types"
 import Logo from "components/Logo"

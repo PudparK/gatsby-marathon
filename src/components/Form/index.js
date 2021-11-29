@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss"
 
 import Iframe from "components/Iframe"
 
@@ -96,7 +96,7 @@ const Form = () => {
           <input type="submit" disabled={isSubmitting} />
         </label>
       </form>
-      <div className={styles.formMessage}>
+      <div>
         {isSent && <p>Success. We'll get back to you soon. Thank you!</p>}
       </div>
     </div>

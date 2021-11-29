@@ -1,7 +1,7 @@
 // /** @jsx jsx */
 // import { jsx } from "theme-ui"
 // import { useStaticQuery, graphql } from "gatsby"
-// import styles from "./styles.module.scss"
+// import * as styles from "./styles.module.scss"
 
 // import {
 //   Accordion,

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 

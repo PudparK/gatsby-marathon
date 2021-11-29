@@ -1,13 +1,13 @@
 import React from "react"
-import styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss"
 
 //Components
 import Blurb from "components/Blurb"
-import Events from "components/Events"
 import Form from "components/Form"
 import Container from "components/Container"
 // import GravityForm from "gatsby-gravityforms-component"
 import Map from "components/Map"
+import Events from "components/Events"
 const content = {
   hero: { headerText: `RUN WITH US`, buttonText: `APPLY NOW` },
   contactBlurb: {
@@ -27,7 +27,7 @@ const Contact = () => {
           <Blurb content={content.contactBlurb}></Blurb>
           <Container>
             <div className={styles.contactContentWrapper}>
-              <div className={styles.form}>
+              <div>
                 <Form />
               </div>
               <div className={styles.sideContent}>
